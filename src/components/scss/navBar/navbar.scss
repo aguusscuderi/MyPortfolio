@@ -1,5 +1,5 @@
 nav {  
-	background-color: #9de1eb;
+	background-color: #2647b3;
     border-bottom: 1.7px solid #E5E8E5;;;
 	width: 100%;
     text-align: center;
@@ -84,16 +84,18 @@ nav {
         li {
             margin: 8px;
             list-style: none;
+            
             :hover{
-                font-size: 20px;
+                background-color: #092787;
                 transition: all .3s;
-                text-decoration: underline;
             }
             @media screen and (min-width: 768px) {
                margin: 5px 25px;
             }
 
             a {
+                padding: 11px;
+                border-radius: 500px;
                 font-size: 17px;
                 opacity: 0;
                 text-decoration: none;

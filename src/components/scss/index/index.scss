@@ -78,13 +78,15 @@
     left: 0;
     border-radius: 50%;
     border: 2px solid black;
-    margin: 25px auto;
+    margin: 100px auto;
     animation: imageEntry 1s ease-out;
     img{
         width: 100%;
         object-fit: contain;
         border-radius: 50%;
     }
+
+    
 }
 
 @keyframes imageEntry {
@@ -95,4 +97,19 @@
     to {
         transform: translateY(0px);
     }
+}
+
+
+.cv_button{
+        //position: absolute;
+        border-radius: 500px;
+        font-size: inherit;
+        padding: 11px 60px;
+        border: 1px solid black;
+        background-color: black;
+        cursor: pointer;
+        margin: 50px 0px;
+       span{
+           color: white;
+       }
 }
