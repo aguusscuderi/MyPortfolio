@@ -13,24 +13,34 @@
 
 .circles_container {
 
+   //animation: gradient 1s linear;
 
     .circle1{
         background-color: #07afd2;
+        //background-image: url(../../imagenes/firstImageSlide.jpg);
+        //background: transparent;
         height: 150px;
         animation: infoWidth 1s ease-in;
+        //animation: gradient 1s ease-in;
     }
     .circle2{
         position: relative;
         right: 0;
         background-color: #67e4e6;
+        //background: transparent;
+        //background-image: url(../../imagenes/secondImageSlide.png);
         height: 150px;
         animation: infoWidth 1.5s ease-in;
+        //animation: gradient 1.5 ease-in;
     }
     .circle3{
         right: 100%;
         background-color: #cafffc;
+        //background: transparent;
+        //background-image: url(../../imagenes/thirdImageSlide.png);
         height: 150px;
         animation: infoWidth 2s ease-in;
+        //animation: gradient 2s ease-in;
     }
 }
 
@@ -44,20 +54,45 @@
     }
 }
 
+/*@keyframes gradient {
+    0%{
+        background: white;
+    }
+
+    50%{
+        background: whitesmoke;
+    }
+
+    100%{
+        background-image: url(../../imagenes/imagenCompleta.jpg);
+    }
+
+}*/
+
 //Second section
 
 .profile_image-container{
     position: absolute;
-    height: 250;
     width: 250px;
     right: 0;
     left: 0;
     border-radius: 50%;
     border: 2px solid black;
     margin: 25px auto;
+    animation: imageEntry 1s ease-out;
     img{
         width: 100%;
         object-fit: contain;
         border-radius: 50%;
+    }
+}
+
+@keyframes imageEntry {
+    from{
+        transform: translateY(800px);
+    }
+
+    to {
+        transform: translateY(0px);
     }
 }

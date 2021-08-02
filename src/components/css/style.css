@@ -469,20 +469,43 @@ nav .mobile__nav-container .flex__ul li a {
     width: 100%;
   }
 }
+/*@keyframes gradient {
+    0%{
+        background: white;
+    }
+
+    50%{
+        background: whitesmoke;
+    }
+
+    100%{
+        background-image: url(../../imagenes/imagenCompleta.jpg);
+    }
+
+}*/
 .profile_image-container {
   position: absolute;
-  height: 250;
   width: 250px;
   right: 0;
   left: 0;
   border-radius: 50%;
   border: 2px solid black;
   margin: 25px auto;
+  animation: imageEntry 1s ease-out;
 }
 .profile_image-container img {
   width: 100%;
   object-fit: contain;
   border-radius: 50%;
+}
+
+@keyframes imageEntry {
+  from {
+    transform: translateY(800px);
+  }
+  to {
+    transform: translateY(0px);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
