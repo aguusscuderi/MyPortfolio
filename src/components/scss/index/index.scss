@@ -1,0 +1,63 @@
+.row {
+    grid-template-rows: 1fr;
+    
+    .section1{
+        background-color: red;
+    } 
+    .section2{
+        height: 180px;
+    }
+}
+
+//First section
+
+.circles_container {
+
+
+    .circle1{
+        background-color: #07afd2;
+        height: 150px;
+        animation: infoWidth 1s ease-in;
+    }
+    .circle2{
+        position: relative;
+        right: 0;
+        background-color: #67e4e6;
+        height: 150px;
+        animation: infoWidth 1.5s ease-in;
+    }
+    .circle3{
+        right: 100%;
+        background-color: #cafffc;
+        height: 150px;
+        animation: infoWidth 2s ease-in;
+    }
+}
+
+@keyframes infoWidth {
+    from{
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+//Second section
+
+.profile_image-container{
+    position: absolute;
+    height: 250;
+    width: 250px;
+    right: 0;
+    left: 0;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 25px auto;
+    img{
+        width: 100%;
+        object-fit: contain;
+        border-radius: 50%;
+    }
+}
