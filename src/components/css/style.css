@@ -516,9 +516,18 @@ nav .mobile__nav-container .flex__ul li a {
   background-color: black;
   cursor: pointer;
   margin: 50px 0px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.cv_button i {
+  color: white;
 }
 .cv_button span {
   color: white;
+}
+
+.cv_buttonAnimated {
+  transition: all 1.5s;
+  padding: 11px 11px;
 }
 
 /*# sourceMappingURL=style.css.map */

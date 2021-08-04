@@ -1,4 +1,5 @@
 import perfil from  '../../imagenes/carnet.jpg'
+import Button from './ButtonCV'
 
 export default function SecondSection(){
     return(
@@ -6,7 +7,7 @@ export default function SecondSection(){
         <div className="profile_image-container">
             <img src={perfil} alt="" />
         </div>
-        <button type="button" className="cv_button"> <span> DESCARGA MI CV </span> </button>
+        <Button/>
         </>
     )
 }
