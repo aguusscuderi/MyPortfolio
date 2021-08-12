@@ -2,16 +2,67 @@
     grid-template-rows: 1fr;
     
     .section1{
-        background-color: red;
+       
     } 
     .section2{
-        height: 180px;
+       
     }
 }
 
 //First section
 
-.circles_container {
+
+.presentation-container {
+    margin-top: 30px;
+    padding: 15px;
+    font-size: 30px;
+    z-index: 10;
+
+        h1 {
+            letter-spacing: 3px;
+        }
+        
+        .dynamic-texts {
+            z-index: 10;
+             li {
+            list-style: none;
+            font-weight: 500;
+            margin: 5px;
+            
+            .lines::after{
+                content: "";
+                position: absolute;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                border-left: 1px solid black;
+                animation: typing 2s steps(12) infinite;
+                background: white;
+            }
+            .lines{
+                position: relative;
+               
+            }
+        }
+        }
+       img {
+
+        margin: 0;
+        top: 0;
+        max-width:100%;
+        height:auto;
+       }
+
+}
+
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+        width: 0px;
+    }
+}
+/*.circles_container {
 
    //animation: gradient 1s linear;
 
@@ -102,6 +153,7 @@
 
 .cv_button{
     //position: absolute;
+    display: inline-block;
     border-radius: 500px;
     font-size: inherit;
     padding: 11px 60px;

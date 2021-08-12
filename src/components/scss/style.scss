@@ -1,3 +1,8 @@
 @import './grid-system/gridSystem';
 @import './navBar/navbar';
-@import './index/index.scss'
+@import './index/index.scss';
+@import './contact/contact';
+
+main{
+    position: relative;
+}

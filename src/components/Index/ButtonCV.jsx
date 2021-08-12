@@ -26,9 +26,9 @@ export default function Button(){
 
     return(
         <>
-            <button onClick={() => setAnimate(
+            <div onClick={() => setAnimate(
             animated
-            )} type="button" className="cv_button"> <span className="cv_span">  DESCARGA MI CV </span> </button>
+            )} className="cv_button"> <span className="cv_span">  DESCARGA MI CV </span> </div>
         </>
     )
 } 
