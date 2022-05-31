@@ -1,12 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 export default function Button(){
-    const [animate, setAnimate] = useState()
-
-    useEffect(()=> {
-      console.log('montado')
-    }, [animate])
-
+    //const [animate, setAnimate] = useState()
     const animated = () => {
         const butt = document.querySelector('.cv_button')
         const span = document.querySelector('.cv_span')
@@ -19,16 +14,12 @@ export default function Button(){
                 butt.classList.add('cv_butt') 
                 span.innerHTML = 'DESCARGA MI CV'
             }, 4000)
-        }else{
-           
         }
     }
 
     return(
         <>
-            <div onClick={() => setAnimate(
-            animated
-            )} className="cv_button"> <span className="cv_span">  DESCARGA MI CV </span> </div>
+            <div onClick={() => animated()} className="cv_button"> <span className="cv_span">  DESCARGA MI CV </span> </div>
         </>
     )
 } 

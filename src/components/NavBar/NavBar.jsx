@@ -1,4 +1,4 @@
-import { render } from "@testing-library/react"
+//import { render } from "@testing-library/react"
 import '../css/style.css'
 
 function NavBar() {
@@ -24,7 +24,7 @@ function NavBar() {
                     e.currentTarget.classList.toggle('toggle')
                 }    
     }
-    render()
+    //render()
     return (
         <>
         <nav>

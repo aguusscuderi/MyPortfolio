@@ -436,6 +436,7 @@ nav .mobile__nav-container .flex__ul li a {
 .row {
   grid-template-rows: 1fr;
 }
+
 .presentation-container {
   margin-top: 30px;
   padding: 15px;
@@ -480,71 +481,13 @@ nav .mobile__nav-container .flex__ul li a {
     width: 0px;
   }
 }
-/*.circles_container {
-
-   //animation: gradient 1s linear;
-
-    .circle1{
-        background-color: #07afd2;
-        //background-image: url(../../imagenes/firstImageSlide.jpg);
-        //background: transparent;
-        height: 150px;
-        animation: infoWidth 1s ease-in;
-        //animation: gradient 1s ease-in;
-    }
-    .circle2{
-        position: relative;
-        right: 0;
-        background-color: #67e4e6;
-        //background: transparent;
-        //background-image: url(../../imagenes/secondImageSlide.png);
-        height: 150px;
-        animation: infoWidth 1.5s ease-in;
-        //animation: gradient 1.5 ease-in;
-    }
-    .circle3{
-        right: 100%;
-        background-color: #cafffc;
-        //background: transparent;
-        //background-image: url(../../imagenes/thirdImageSlide.png);
-        height: 150px;
-        animation: infoWidth 2s ease-in;
-        //animation: gradient 2s ease-in;
-    }
-}
-
-@keyframes infoWidth {
-    from{
-        width: 0%;
-    }
-
-    to {
-        width: 100%;
-    }
-}
-
-/*@keyframes gradient {
-    0%{
-        background: white;
-    }
-
-    50%{
-        background: whitesmoke;
-    }
-
-    100%{
-        background-image: url(../../imagenes/imagenCompleta.jpg);
-    }
-
-}*/
 .profile_image-container {
-  position: absolute;
   width: 250px;
   right: 0;
   left: 0;
   border-radius: 50%;
   border: 2px solid black;
-  margin: 100px auto;
+  margin: auto;
   animation: imageEntry 1s ease-out;
 }
 .profile_image-container img {
@@ -583,6 +526,44 @@ nav .mobile__nav-container .flex__ul li a {
   transition: all 1.5s;
   padding: 11px 11px;
 }
+
+.carrousel {
+  padding: 10px;
+  background-color: #2647b3;
+  margin-top: 20px;
+}
+
+.carrousel-items {
+  display: flex;
+  width: calc(300px * 18);
+  animation: scroll 40s infinite linear;
+}
+
+.carrousel-item {
+  max-width: 250px;
+  min-width: 250px;
+  height: 150px;
+  margin-right: 100px;
+}
+.carrousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-150px*9));
+  }
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
 main {
   position: relative;
 }
